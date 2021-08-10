@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	pb "github.com/samples/demo-grpc/pb"
+	pb "github.com/psaigo/samples/demo-grpc/pb"
 	"google.golang.org/grpc"
 )
 
@@ -20,8 +20,8 @@ func main() {
 	client := pb.NewEchoClient(conn)
 
 	// Calling Server
-	text := &pb.Input{Text: "hell world"}
-	resp, err := client.EchoEcho(context.Background(), text)
+	text := &pb.Input{Text: "hello world"}
+	resp, err := client.DemoHello(context.Background(), text)
 	if err != nil {
 		fmt.Println("client call error: ", err)
 		return
