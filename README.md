@@ -6,7 +6,7 @@ Basic working client and server in Go that leverages GRPC.
 ### Instructions:
 
 #### Generate the ~pb.go:
-cd $GOPATH/src/github.com/psaigo/samples/demo-grpc/pb
+cd $GOPATH/src/github.com/psaigo/samples/demo-grpc/pb \n
 run on terminal: protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative pb/demo.proto
 
 #### run the server:
