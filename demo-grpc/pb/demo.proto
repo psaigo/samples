@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package pb;
+
+option go_package = "C:/Go/src/github.com/psaigo/samples/demo-grpc/pb";
+
+service Echo {
+    rpc DemoHello(Input) returns(Output) {}
+ }
+
+message Input {
+    string text = 1;
+}
+
+message Output {
+    string text = 1;
+}
